@@ -1,10 +1,10 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import Authenticate from '../Components/Authenticate';
-import Career from './Career';
-import Detail from './Detail';
-import Login from './Login'
-import Params from './Params';
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Authenticate from "../Components/Authenticate";
+import Career from "./Career";
+import Detail from "./Detail";
+import Login from "./Login";
+import Params from "./Params";
 
 const AllRoutes = () => {
   return (
@@ -12,7 +12,7 @@ const AllRoutes = () => {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<Params />} />
-                <Route
+        <Route
           path="/:param"
           element={
             <Authenticate>
@@ -31,6 +31,6 @@ const AllRoutes = () => {
       </Routes>
     </div>
   );
-}
+};
 
-export default AllRoutes
+export default AllRoutes;
